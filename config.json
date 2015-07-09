@@ -1,0 +1,2 @@
+"name": "【译】Python Lex Yacc手册",
+"introduction": "PLY是基于Python的lex和yacc实现，由David Beazley开发并维护。相比C语言版的lex和yacc，发挥了Python的语言特点，使得开发类似编译器或解释器变得更轻松。本文是PLY的中文翻译版。"
