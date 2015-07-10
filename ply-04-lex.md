@@ -214,7 +214,6 @@ t_PRINT = r'print'
 标记被lex返回后，它们的值被保存在`value`属性中。正常情况下，value是匹配的实际文本。事实上，value可以被赋为任何Python支持的类型。例如，当扫描到标识符的时候，你可能不仅需要返回标识符的名字，还需要返回其在符号表中的位置，可以像下面这样写：
 
 ```
-
 def t_ID(t):
     ...
     # Look up symbol table information and return a tuple
@@ -231,7 +230,6 @@ def t_ID(t):
 想丢弃像注释之类的标记，只要不返回value就行了，像这样：
 
 ```
-
 def t_COMMENT(t):
     r'\#.*'
     pass
@@ -760,7 +758,6 @@ def t_foo_end(t):
 状态的切换可以使用栈：
 
 ```
-
 def t_begin_foo(t):
     r'start_foo'
     t.lexer.push_state('foo')             # Starts 'foo' state
@@ -775,7 +772,6 @@ def t_foo_end(t):
 举个例子会更清晰。假设你在写一个分析器想要从一堆C代码中获取任意匹配的闭合的大括号里面的部分：这意味着，当遇到起始括号'{'，你需要读取与之匹配的'}'以上的所有部分。并返回字符串。使用通常的正则表达式几乎不可能，这是因为大括号可以嵌套，而且可以有注释，字符串等干扰。因此，试图简单的匹配第一个出现的'}'是不行的。这里你可以用lex的状态来做到：
 
 ```
-
 # Declare the state
 states = (
   ('ccode','exclusive'),
