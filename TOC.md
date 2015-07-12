@@ -5,3 +5,4 @@
  - [3 PLY概要](ply-03-summary.md)
  - [4 Lex](ply-04-lex.md)
  - [5 语法分析基础](ply-05-parsing-basics.md)
+ - [6 Yacc](ply-06-yacc.md)
