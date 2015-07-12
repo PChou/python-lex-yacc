@@ -6,3 +6,7 @@
  - [4 Lex](ply-04-lex.md)
  - [5 语法分析基础](ply-05-parsing-basics.md)
  - [6 Yacc](ply-06-yacc.md)
+ - [7 多个语法和词法分析器](ply-07-multiple-parsers-and-lexers.md)
+ - [8 使用Python的优化模式](ply-08-using-python's-optimized-mode.md)
+ - [9 高级调试](ply-09-advanced-debugging.md)
+ - [10 如何继续](ply-10-where-to-go-from-here.md)
